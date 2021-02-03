@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import sys
 import os
 from rosparam_handler.parameter_generator_catkin import YamlGenerator
@@ -22,7 +22,7 @@ def generate_yaml(in_file):
 
     # Execute param file in mocked environment
     global_vars = {"__file__": in_file, 'ParameterGenerator': YamlGenerator}
-    return execfile(in_file, global_vars)
+    return exec(open(in_file).read(), global_vars)
 
 
 if __name__ == "__main__":

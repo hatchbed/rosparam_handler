@@ -20,7 +20,7 @@ Lastly you will need to create a params file, for this example we'll call it Tut
 
 Add the following to your Tutorials.params file:
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from rosparam_handler.parameter_generator_catkin import *
 gen = ParameterGenerator()
 
@@ -66,7 +66,7 @@ exit(gen.generate("rosparam_tutorials", "example_node", "Tutorial"))
 
 Now lets break the code down line by line.
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from rosparam_handler.parameter_generator_catkin import *
 gen = ParameterGenerator()
 ```
