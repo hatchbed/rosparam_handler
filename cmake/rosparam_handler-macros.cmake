@@ -39,6 +39,7 @@ macro(generate_ros_parameter_files)
             assert(CATKIN_ENV)
             set(_cmd
                     ${CATKIN_ENV}
+                    ${PYTHON_EXECUTABLE}
                     ${_input}
                     ${ROSPARAM_HANDLER_ROOT_DIR}
                     ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_SHARE_DESTINATION}
